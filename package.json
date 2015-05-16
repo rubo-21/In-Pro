@@ -1,0 +1,22 @@
+{
+  "name": "In-Pro",
+  "version": "0.0.1",
+  "description": "In-Pro website",
+  "author": "Ruben Yeghikyan",
+  "private": true,
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "browser-sync": "^2.3.1",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jade": "^1.0.0",
+    "gulp-jshint": "^1.9.2",
+    "gulp-stylus": "^2.0.1",
+    "gulp-watch": "^4.2.0",
+    "imagemin-pngquant": "^4.0.0",
+    "run-sequence": "^1.0.2"
+  }
+}

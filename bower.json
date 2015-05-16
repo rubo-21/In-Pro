@@ -1,0 +1,22 @@
+{
+  "name": "In-Pro",
+  "version": "0.0.1",
+  "authors": [
+    "rubo-21 <rubenyeghikyan@gmail.com>"
+  ],
+  "description": "In-Pro website",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "dist",
+    "src/vendor"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.3.0"
+  }
+}
