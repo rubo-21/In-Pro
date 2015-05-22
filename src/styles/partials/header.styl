@@ -1,24 +1,71 @@
 .b-header
 	position relative
-	width 100%
+	min-width 980px
+	max-width 1500px
 	height 150px
-	margin auto
+	margin 0 auto
 	clearfix()
-	&__item
-		float left
+	z-index 1
+	overflow hidden
 	&__logo
-		position relative
-		margin-top 40px
-		margin-left 50px
+		position absolute
+		top 40px
+		left 35px
 		width 166px
 		height 71px
 		background url('../img/logo.png') center no-repeat
-	&__logo:hover
-		cursor pointer
-		opacity .7
+		&:hover
+			cursor pointer
+			opacity .7
 	&__nav
 		position relative
-		margin 50px 40px
+		width 820px
+		margin 55px auto
+		padding-left 130px
 		list-style none
 		&__item
 			display inline-block
+			padding 10px 27px
+			&:hover
+			&.active
+				background url('../img/menu_hover.png') center no-repeat
+				background-size 100% 100%
+				& a
+					color #1a1a18 !important
+			& a
+			& a:link
+			& a:visited
+			& a:hover
+			& a:active
+				color #fff
+				font-size 18px
+				text-transform uppercase
+	&__search-wrapper
+		position absolute
+		top 65px
+		right 60px
+		& > i
+			color #fff
+			&:hover
+				cursor pointer
+				opacity .7
+	&__search
+		display none
+		max-width 255px
+		margin-top -7px
+		background #fff
+		padding 5px 10px
+		border-radius 3px
+		& input
+			padding-left 10px
+			border 0
+			font-size 18px
+			background transparent
+			-webkit-appearance none
+			-moz-appearance none
+			appearance none
+			&::-webkit-input-placeholder
+			&:-moz-placeholder
+			&::-moz-placeholder
+			&:-ms-input-placeholder
+				color #1a1a18

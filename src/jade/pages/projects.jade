@@ -1,15 +1,12 @@
 extends ../layouts/default
 
-block body
-	- var isHome = true
-
 block head
 	- pageTitle = 'Ин-Про - интеграция проектов';
 	- pageDescription = 'Ин-Про - интеграция проектов';
 	- pageKeywords = 'Ин-Про';
 
-block content
-	include ../blocks/main
+block header
+	- setBG = true
 
-block scriptsAfter
-	+script(["slider.js"])
+block content
+	include ../blocks/projects

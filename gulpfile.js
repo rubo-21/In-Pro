@@ -77,9 +77,12 @@ gulp.task('copy:resources', function (){
 gulp.task('copy:scripts', function (){
 	return gulp.src([
 					'jquery/dist/jquery.min.js',
+					'jquery/dist/jquery.min.map',
 					'fontawesome/css/font-awesome.min.css',
 					'fontawesome/css/font-awesome.css.map',
-					'fontawesome/fonts/**/*'
+					'fontawesome/fonts/**/*',
+					'OwlCarousel/owl-carousel/**/*',
+					'!OwlCarousel/owl-carousel/owl.carousel.js',
 				], {
 				base: paths.src + 'vendor',
 				cwd: paths.src + 'vendor'

@@ -5,9 +5,18 @@ doctype html
 html(lang='ru')
 	include ../partials/head
 	body
-		.main
-			include ../partials/header
-			block content
-			include ../partials/footer
+		block body
+		if isHome
+			.main.b-home-page.js-home-page-main
+				include ../partials/header
+				block content
+				include ../partials/footer
 
-		include ../partials/scripts
+			include ../partials/scripts
+		else
+			.main
+				include ../partials/header
+				block content
+				include ../partials/footer
+
+			include ../partials/scripts

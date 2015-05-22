@@ -1,0 +1,22 @@
+extends ../layouts/default
+
+block head
+	- pageTitle = 'Ин-Про - интеграция проектов';
+	- pageDescription = 'Ин-Про - интеграция проектов';
+	- pageKeywords = 'Ин-Про';
+
+block headStyles
+	link(href="assets/libs/OwlCarousel/owl-carousel/owl.carousel.css" rel="stylesheet" type='text/css')
+	link(href="assets/libs/OwlCarousel/owl-carousel/owl.theme.css" rel="stylesheet" type='text/css')
+
+block scriptsBefore
+	script(src="assets/libs/OwlCarousel/owl-carousel/owl.carousel.min.js" type="text/javascript")
+
+block scriptsAfter
+	+script(["owl.init.js"])
+
+block header
+	- setBG = true
+
+block content
+	include ../blocks/about
