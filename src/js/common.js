@@ -12,4 +12,8 @@ $(function () {
 		$(this).hide();
 		$(this).find('input').val('');
 	});
+
+ 	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
 });

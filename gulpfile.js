@@ -83,6 +83,7 @@ gulp.task('copy:scripts', function (){
 					'fontawesome/fonts/**/*',
 					'OwlCarousel/owl-carousel/**/*',
 					'!OwlCarousel/owl-carousel/owl.carousel.js',
+					'fancybox/source/**/*',
 				], {
 				base: paths.src + 'vendor',
 				cwd: paths.src + 'vendor'

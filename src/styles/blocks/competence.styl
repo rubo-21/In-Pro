@@ -1,0 +1,119 @@
+.b-statistics
+	position relative
+	width 100%
+	height 852px /* 752px */
+	margin-top -150px
+	background url('../img/about_bg.jpg') center no-repeat
+	background-size 100% 100%
+	&__wrap
+		position relative
+		min-width 980px
+		max-width 1500px
+		height 100%
+		margin 0 auto
+	&__hint
+		position absolute
+		width 668px
+		height 202px
+		top 280px
+		left 170px
+		padding 31px
+		text-transform uppercase
+		line-height 35px
+		font-size 24px
+		color #fff
+		background url('../img/about_statistics_bg.png') center no-repeat
+		background-size 100% 100%
+	&__hint2
+		position absolute
+		width 38%
+		height 202px
+		top 380px
+		right 0
+		line-height 28px
+		font-size 20px
+		color #fff
+	&__block2
+		position absolute
+		bottom 250px
+		left 200px
+		width 545px
+		line-height 27px
+		font-size 20px
+		color #fff
+		clearfix()
+
+.b-competence-hint
+	position relative
+	width 100%
+	height 350px
+	padding 0 385px 0 206px
+	&__header
+		width 725px
+		margin 79px 0 48px
+		text-transform uppercase
+		line-height 55px
+		font-size 48px
+		color #1a1a18
+	&__text
+		font-size 24px
+		color #6e6e6e
+	&::after
+		content " "
+		position absolute
+		bottom -44px
+		width 83px
+		height 45px
+		z-index 1
+		background url('../img/triangel.png') center no-repeat
+		background-size 100% 100%
+	&:nth-child(2n+1)::after
+		right 348px
+	&:nth-child(2n)::after
+		left 348px
+
+.b-power-supply::after
+.b-ventilation::after
+	left 348px
+
+.b-automation .b-competence-hint__header
+	width 723px
+
+.b-competence-block
+	position relative
+	width 100%
+	height 696px
+	&__content
+		position absolute
+		top 117px
+		left 125px
+		width 540px
+		height 355px
+		padding 63px 62px
+		background rgba(5, 38, 61, .8)
+		color #fff
+	&__header
+		margin-bottom 35px
+		font-size 36px
+		padding-left 20px
+	&__text
+		margin-bottom 21px
+		font-size 20px
+	& span
+		color #009de2
+
+.b-competence-block.b-telecommunications
+	background url('../img/competence_bg1.jpg') center no-repeat
+	background-size 100% 100%
+.b-competence-block.b-power-supply
+	background url('../img/competence_bg2.jpg') center no-repeat
+	background-size 100% 100%
+.b-competence-block.b-security
+	background url('../img/competence_bg3.jpg') center no-repeat
+	background-size 100% 100%
+.b-competence-block.b-ventilation
+	background url('../img/competence_bg4.jpg') center no-repeat
+	background-size 100% 100%
+.b-competence-block.b-automation
+	background url('../img/competence_bg5.jpg') center no-repeat
+	background-size 100% 100%
